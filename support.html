@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support — Last Path</title>
+    <meta name="description" content="Get help with Last Path, the arrow-sliding puzzle game.">
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="site-nav">
+        <div class="wrap">
+            <a href="index.html" class="brand">
+                <span class="brand-mark">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 12H16M16 12L11 7M16 12L11 17" stroke="white" stroke-width="2.4"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
+                Last Path
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html#about">About</a>
+                <a href="index.html#gameplay">Gameplay</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="support.html" class="current">Support</a>
+                <a href="index.html#play" class="nav-cta">Get it on Google Play</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="legal-hero">
+        <div class="wrap">
+            <span class="section-eyebrow">We're here to help</span>
+            <h1>Support</h1>
+            <p class="updated">Stuck on a level, found a bug, or have feedback? Let us know.</p>
+        </div>
+    </header>
+
+    <main class="legal-body wrap">
+
+        <div class="support-card">
+            <div class="icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 4h16v12H7l-3 3V4z" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+            <h3>Need help?</h3>
+            <p>Email us and we'll get back to you as soon as we can.</p>
+            <a class="email" href="mailto:shailisharmabrt@gmail.com">shailisharmabrt@gmail.com</a>
+            <p class="note">We usually reply within 48 hours.</p>
+        </div>
+
+        <h4>Frequently asked questions</h4>
+
+        <div class="faq-item">
+            <h4>Why did my move fail even though the arrow looked clear?</h4>
+            <p>An arrow only escapes if every tile in its path is completely empty, all the way to the edge of the
+                board. If any part of the path is blocked — even one tile — the move fails and costs a life. Use the
+                Hint button if you're not sure which arrow is safe to move next.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>I lost all my lives. Is my progress gone?</h4>
+            <p>Not necessarily. When you run out of lives, you can choose to watch an optional rewarded ad to get an
+                extra life and keep going on that same puzzle.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>How do I move around a large board?</h4>
+            <p>Drag with one finger to pan around the board, and pinch with two fingers to zoom in or out. The Zoom
+                button also toggles between an overview and a close-up view.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>Will my progress carry over if I switch devices?</h4>
+            <p>Progress is currently stored locally on your device only. Cloud saving may be introduced in a future
+                update.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>I found a bug or the game crashed. What should I do?</h4>
+            <p>Please email us with your device model, Android version, and a short description of what happened right
+                before the crash. Screenshots help a lot too.</p>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand">
+                        <span class="brand-mark">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 12H16M16 12L11 7M16 12L11 17" stroke="white" stroke-width="2.4"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        Last Path
+                    </a>
+                    <p>A relaxing arrow-sliding puzzle game where every arrow matters.</p>
+                </div>
+                <div class="footer-cols">
+                    <div class="footer-col">
+                        <h5>Game</h5>
+                        <a href="index.html#about">About</a>
+                        <a href="index.html#gameplay">Gameplay</a>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Legal</h5>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms &amp; Conditions</a>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Help</h5>
+                        <a href="support.html">Support</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Last Path. All rights reserved.</span>
+                <span>Built with ❤️ for puzzle solvers.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        navToggle.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', isOpen);
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Last Path</title>
+    <meta name="description" content="Privacy Policy for the Last Path mobile puzzle game.">
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="site-nav">
+        <div class="wrap">
+            <a href="index.html" class="brand">
+                <span class="brand-mark">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 12H16M16 12L11 7M16 12L11 17" stroke="white" stroke-width="2.4"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
+                Last Path
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html#about">About</a>
+                <a href="index.html#gameplay">Gameplay</a>
+                <a href="privacy.html" class="current">Privacy</a>
+                <a href="support.html">Support</a>
+                <a href="index.html#play" class="nav-cta">Get it on Google Play</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="legal-hero">
+        <div class="wrap">
+            <span class="section-eyebrow">Legal</span>
+            <h1>Privacy Policy</h1>
+            <p class="updated">Last updated: July 2026</p>
+        </div>
+    </header>
+
+    <main class="legal-body wrap">
+
+        <h4>1. Local Storage</h4>
+        <p>
+            Last Path stores your game progress, unlocked levels, settings, and high scores
+            locally on your device. This data stays on your device and is used only to
+            provide game functionality — it is not uploaded to our servers.
+        </p>
+
+        <h4>2. Internet Access</h4>
+        <p>
+            An internet connection may be required for displaying advertisements,
+            loading rewarded ads, analytics reporting, and future online features.
+            Most gameplay can be enjoyed without an active internet connection.
+        </p>
+
+        <h4>3. Advertisements</h4>
+        <p>
+            This game uses Google AdMob to display banner, interstitial, and rewarded
+            advertisements. AdMob may collect and process information such as device
+            identifiers, advertising IDs, IP address, approximate location, and other
+            technical information in accordance with
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>
+            to provide, personalize, and measure advertisements.
+        </p>
+
+        <h4>4. Analytics &amp; Crash Reporting</h4>
+        <p>
+            We use Google Firebase Analytics and related Google services to collect
+            anonymous or aggregated information about gameplay, feature usage,
+            performance, crashes, and diagnostics. This information helps us improve
+            game stability, fix bugs, and enhance the overall player experience.
+        </p>
+
+        <h4>5. Children's Privacy</h4>
+        <p>
+            If this game is made available to children, advertisements and data
+            processing will follow the Google Play Families Policy and applicable laws.
+            We do not knowingly collect personally identifiable information directly
+            from children.
+        </p>
+
+        <h4>6. Third-Party Services</h4>
+        <p>
+            This game integrates third-party services including Google AdMob and
+            Google Firebase. These services have their own privacy policies governing
+            how they collect and process data, linked above.
+        </p>
+
+        <h4>7. Your Choices</h4>
+        <p>
+            You can reset your advertising identifier or opt out of personalized ads
+            through your device's system settings at any time. Uninstalling the game
+            removes all locally stored data from your device.
+        </p>
+
+        <h4>8. Policy Updates</h4>
+        <p>
+            This Privacy Policy may be updated from time to time. Continued use of
+            the game after changes become effective constitutes acceptance of the
+            updated policy. Significant changes will be reflected by updating the
+            "Last updated" date above.
+        </p>
+
+        <h4>9. Contact Us</h4>
+        <p>
+            If you have any questions about this Privacy Policy, please reach out
+            through our <a href="support.html">support page</a>.
+        </p>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand">
+                        <span class="brand-mark">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 12H16M16 12L11 7M16 12L11 17" stroke="white" stroke-width="2.4"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        Last Path
+                    </a>
+                    <p>A relaxing arrow-sliding puzzle game where every arrow matters.</p>
+                </div>
+                <div class="footer-cols">
+                    <div class="footer-col">
+                        <h5>Game</h5>
+                        <a href="index.html#about">About</a>
+                        <a href="index.html#gameplay">Gameplay</a>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Legal</h5>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms &amp; Conditions</a>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Help</h5>
+                        <a href="support.html">Support</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Last Path. All rights reserved.</span>
+                <span>Built with ❤️ for puzzle solvers.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        navToggle.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', isOpen);
+        });
+    </script>
+
+</body>
+
+</html>

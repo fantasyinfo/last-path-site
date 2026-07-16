@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Path — Slide. Think. Escape.</title>
+    <meta name="description"
+        content="Last Path is a relaxing arrow-sliding puzzle game. Study the board, free every arrow in the right order, and find the last path out.">
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="site-nav">
+        <div class="wrap">
+            <a href="index.html" class="brand">
+                <span class="brand-mark">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 12H16M16 12L11 7M16 12L11 17" stroke="white" stroke-width="2.4"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
+                Last Path
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html#about">About</a>
+                <a href="index.html#gameplay">Gameplay</a>
+                <a href="index.html#play">Puzzle Shapes</a>
+                <a href="support.html">Support</a>
+                <a href="#play" class="nav-cta">Get it on Google Play</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="wrap">
+            <div class="hero-grid">
+                <div>
+                    <span class="hero-eyebrow"><span class="dot"></span> Now in development</span>
+                    <h1>Every arrow<br><span class="accent-word">has a way out.</span></h1>
+                    <p class="hero-tagline"><span class="glyph">➜</span> Slide. Think. Escape.</p>
+                    <p class="hero-desc">Last Path is a calm, sharp-minded puzzle game. Tap an arrow to send it off the
+                        board — but it only escapes if the path ahead is clear. Read the grid, free the right arrow at
+                        the right moment, and clear the board before you run out of lives.</p>
+                    <div class="hero-actions">
+                        <a href="#play" class="btn-primary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 3l18 9-18 9V3z" fill="white" />
+                            </svg>
+                            Get it on Google Play
+                        </a>
+                        <a href="#gameplay" class="btn-ghost">See it in action</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <div class="num">70+</div>
+                            <div class="label">Levels &amp; Counting</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="num">3</div>
+                            <div class="label">Lives Per Board</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="num">∞</div>
+                            <div class="label">Ways to Get Stuck</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="phone-frame">
+                        <img src="assets/screenshots/shape-letterM-color.png"
+                            alt="Last Path gameplay screenshot showing a puzzle board shaped like the letter M, filled with colorful directional arrows"
+                            loading="eager">
+                    </div>
+                    <div class="floating-tag tag-1">❤️❤️❤️ 3 lives left</div>
+                    <div class="floating-tag tag-2">💡 3 hints ready</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section" id="about">
+        <div class="wrap">
+            <div class="section-head">
+                <span class="section-eyebrow">About the game</span>
+                <h2>One rule. A hundred ways to break it.</h2>
+                <p>Last Path strips puzzle gaming down to a single, honest mechanic — and lets the boards do the rest of
+                    the talking.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2">
+                            <path d="M5 12h14M13 6l6 6-6 6" />
+                        </svg></div>
+                    <h3>One tap, one direction</h3>
+                    <p>Every arrow points somewhere. Tap it and it slides that way — simple to learn, but the order you
+                        choose is everything.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2">
+                            <path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.5 5.5 21l2-7.5L2 9h7z" />
+                        </svg></div>
+                    <h3>Boards with shape</h3>
+                    <p>Every puzzle is drawn into a real silhouette — letters, numbers, hourglasses, kites. Clearing the
+                        board reveals the shape.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2">
+                            <path
+                                d="M12 21s-7-4.35-9.5-9A5.5 5.5 0 0112 6.5 5.5 5.5 0 0121.5 12c-2.5 4.65-9.5 9-9.5 9z" />
+                        </svg></div>
+                    <h3>Three lives, real stakes</h3>
+                    <p>Guess wrong and a blocked arrow costs a life. There's no timer pressure to panic over — just the
+                        board, and your read of it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="gameplay">
+        <div class="wrap">
+            <div class="section-head">
+                <span class="section-eyebrow">Inside the puzzle</span>
+                <h2>Watch a board go from tangled to clear</h2>
+                <p>The same grid, before and after — every colored arrow is a piece that has to leave in exactly the
+                    right order.</p>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item"><img src="assets/screenshots/home.png" alt="Home" loading="lazy"></div>
+                <div class="gallery-item"><img src="assets/screenshots/shape-hourglass-color.png"
+                        alt="Hourglass-shaped puzzle board with arrows colored by group" loading="lazy"></div>
+                <div class="gallery-item"><img src="assets/screenshots/shape-kite-mono.png"
+                        alt="Kite-shaped puzzle board, unsolved, all arrows shown in white" loading="lazy"></div>
+                <div class="gallery-item"><img src="assets/screenshots/shape-number46-color.png"
+                        alt="Puzzle board shaped like the number 46, arrows colored by group" loading="lazy"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="play">
+        <div class="wrap">
+            <div class="section-head">
+                <span class="section-eyebrow">Puzzle shapes</span>
+                <h2>Letters, numbers, and everything in between</h2>
+                <p>Every level is built into a silhouette. Here's a small sample of what's waiting on the board.</p>
+            </div>
+            <div class="shapes-strip">
+                <div class="shape-card"><img src="assets/screenshots/home.png" alt="Hourglass puzzle shape, unsolved">
+                    <div class="shape-label">Home</div>
+                </div>
+                <div class="shape-card"><img src="assets/screenshots/shape-letterM-color.png"
+                        alt="Letter M puzzle shape">
+                    <div class="shape-label">Letter M</div>
+                </div>
+                <div class="shape-card"><img src="assets/screenshots/shape-letterM-mono.png"
+                        alt="Letter M puzzle shape, unsolved">
+                    <div class="shape-label">Letter M · unsolved</div>
+                </div>
+                <div class="shape-card"><img src="assets/screenshots/shape-number46-color.png"
+                        alt="Number 46 puzzle shape">
+                    <div class="shape-label">Number 46</div>
+                </div>
+                <div class="shape-card"><img src="assets/screenshots/shape-kite-mono.png" alt="Kite puzzle shape">
+                    <div class="shape-label">Kite Shape</div>
+                </div>
+                <div class="shape-card"><img src="assets/screenshots/shape-hourglass-color.png"
+                        alt="Hourglass puzzle shape">
+                    <div class="shape-label">Hourglass</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="wrap">
+            <div class="section-head">
+                <span class="section-eyebrow">On the board</span>
+                <h2>Everything you need, nothing you don't</h2>
+            </div>
+            <div class="feature-list">
+                <div class="feature-row">
+                    <div class="badge">💡</div>
+                    <div>
+                        <h4>Hint</h4>
+                        <p>Stuck? Hint highlights one arrow that has a clear path right now.</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="badge">↻</div>
+                    <div>
+                        <h4>Restart</h4>
+                        <p>Read the board wrong? Reset the puzzle instantly and start fresh.</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="badge">🔍</div>
+                    <div>
+                        <h4>Zoom</h4>
+                        <p>Drag to pan and pinch to zoom on the larger boards for a closer look.</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="badge">❤️</div>
+                    <div>
+                        <h4>Lives</h4>
+                        <p>Three lives per board. Every blocked move costs one — choose your order carefully.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="wrap">
+            <div class="cta-band">
+                <span class="divider-arrows">↝ ↝ ↝</span>
+                <h2>Find your last path.</h2>
+                <p>Last Path is heading to Google Play. Check back soon, or follow along for the release.</p>
+                <a href="#" class="btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                        <path d="M3 3l18 9-18 9V3z" fill="white" />
+                    </svg>
+                    Get it on Google Play
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand">
+                        <span class="brand-mark">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 12H16M16 12L11 7M16 12L11 17" stroke="white" stroke-width="2.4"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        Last Path
+                    </a>
+                    <p>A relaxing arrow-sliding puzzle game where every arrow matters. Think ahead, clear the path, and
+                        find the way out.</p>
+                </div>
+                <div class="footer-cols">
+                    <div class="footer-col">
+                        <h5>Game</h5>
+                        <a href="index.html#about">About</a>
+                        <a href="index.html#gameplay">Gameplay</a>
+                        <a href="index.html#play">Puzzle Shapes</a>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Legal</h5>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms &amp; Conditions</a>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Help</h5>
+                        <a href="support.html">Support</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Last Path. All rights reserved.</span>
+                <span>Built with ❤️ for puzzle solvers.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        navToggle.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', isOpen);
+        });
+    </script>
+
+</body>
+
+</html>
